@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MediGuide Symptom Checker</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MediGuide Symptom Checker</h1>
+        <div class="symptoms-box">
+            <h2>Select Your Symptoms:</h2>
+            <div id="symptoms-list"></div>
+            <button onclick="analyze()">Analyze Symptoms</button>
+        </div>
+        
+        <div class="results-box" id="results" style="display:none">
+            <h2>Results</h2>
+            <p id="disease"></p>
+            <p id="doctor"></p>
+            <p id="diet"></p>
+            <div class="confidence-meter">
+                <label>Confidence:</label>
+                <progress id="confidence" value="0" max="100"></progress>
+                <span id="confidence-value">0%</span>
+            </div>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
